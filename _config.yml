@@ -28,9 +28,12 @@ twitter_username: lucasta1H
 github_username:  lucasta1
 
 # Build settings
-theme: minima
+# theme: minima
+theme: colorize
 plugins:
   - jekyll-feed
+
+gem 'colorize', '~> 0.8.1'
 
 # Exclude from processing.:
 # The following items will not be processed, by default.
