@@ -21,23 +21,21 @@
 title: lucasta1's blog
 email: 
 description: >- # this means to ignore newlines until "baseurl:"
-  Let's Groove, I'm a material man
-# baseurl: "/" # the subpath of your site, e.g. /blog
-# url: "http://ejjoo.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-github_username: lucasta1
-highlighter: rouge
-svg:
-  optimize: true
+  Material Man
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://lucasta1.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: lucasta1H
+github_username:  lucasta1
+
 # Build settings
 # theme: minima
-highlighter-theme: monokai
-date_format: "%Y-%M-%D"
+theme: colorize
 plugins:
   - jekyll-feed
-category_dir: category/
-tag_dir: tag/
 
-# Exclude from processing.
+gem 'colorize', '~> 0.8.1'
+
+# Exclude from processing.:
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
 # the internal "default list".
