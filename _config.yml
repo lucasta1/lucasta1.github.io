@@ -6,3 +6,5 @@ github_username:  lucasta1
 theme: minima
 plugins:
   - jekyll-feed
+
+url: "https://lucasta1.github.io"
