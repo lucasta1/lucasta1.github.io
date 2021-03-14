@@ -1,0 +1,8 @@
+title: lucasta1's page
+
+twitter_username: lucasta1H
+github_username:  lucasta1
+
+theme: minima
+plugins:
+  - jekyll-feed
