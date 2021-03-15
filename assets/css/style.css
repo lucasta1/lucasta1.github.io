@@ -97,7 +97,7 @@ a.inactive:active {
 /* Profile.html */
 body.Profile {
     background-color: #00205B;
-    margin: 0 auto;
+    margin: 0;
 }
 
 h1.name {
@@ -118,7 +118,7 @@ div.detail {
     font-family: "Open Sans", sans-serif;
     font-size: 10pt;
     color:  rgb(255, 255, 255);
-    margin-top: 50px;
+    margin-top: 0px;
 }
 
 .col-1 {
