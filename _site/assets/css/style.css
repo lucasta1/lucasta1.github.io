@@ -50,7 +50,13 @@ a.base_menu {
     text-align: left;
     font-family: "Open Sans", sans-serif;
     font-size: 12pt;
-    padding-right: 1000%;
+    width: 100%;
+    height: 100%;
+}
+
+div.menu_button {
+    position: relative;
+    z-index: 1; /* 必要であればリンク要素の重なりのベース順序指定 */
 }
 
 div.menu {
