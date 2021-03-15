@@ -53,12 +53,6 @@ a.base_menu {
 
     width: 100%;
     height: 100%;
-
-    /* position: absolute;
-    top: 0;
-    left: 0;
-    text-indent:-999px;
-    z-index: 2; */
 }
 
 div.menu_button {
@@ -67,9 +61,10 @@ div.menu_button {
 }
 
 div.menu {
-    width: 50%;
+    width: 100%;
     margin: 0 auto;
     margin-top: 50px;
+    margin-left:25%;
     /* margin: 300px 0 0 400px; */
 }
 
