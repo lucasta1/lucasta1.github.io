@@ -8,8 +8,18 @@ body.base {
     background-color: #38a1db;
 }
 
+div.baseBox_2char {
+/* --- 親BOXの定義 --------------------------------------------*/
+    display       : inline-block;         /* インラインブロック化 */
+    position      : relative;             /* 親要素               */
+    overflow      : hidden;               /* はみ出しは非表示     */
+    margin        : 0 auto;               /* BOXの位置(中央寄せ)  */
+    width         : 70pt;                /* BOXの横幅            */
+    height        : 140pt;                /* BOXの高さ            */
+}
+   
 /* --- 背景透かし文字の定義 -----------------------------------*/
-.backStr {
+div.baseBox_2char div.backStr {
     position      : absolute;             /* 親要素からの相対位置 */
     display       : inline-block;         /* インラインブロック化 */
     white-space   : nowrap;               /* 折り返ししない       */
@@ -17,8 +27,8 @@ body.base {
     font-weight   : bold;                 /* 太字                 */
     color         : #1F668D; /* 背景透かし文字色     */
                                         /* 中心寄せ＆角度       */
-    left          : 50px;
-    top           : 150px;
+    top           : 50%;
+    left          : 50%;
     transform     : translate(-50%, -50%)
                     rotate(270deg);
     font-family   :'Shippori Mincho B1', serif;;
@@ -46,7 +56,7 @@ a.base_menu {
 div.menu {
     width: 50%;
     margin: 0 auto;
-    margin-top: 300px;
+    margin-top: 50px;
     /* margin: 300px 0 0 400px; */
 }
 
@@ -87,22 +97,7 @@ a.inactive:active {
 /* Profile.html */
 body.Profile {
     background-color: #00205B;
-}
-
-/* --- 背景透かし文字の定義 -----------------------------------*/
-.backStr {
-    position      : absolute;             /* 親要素からの相対位置 */
-    display       : inline-block;         /* インラインブロック化 */
-    white-space   : nowrap;               /* 折り返ししない       */
-    font-size     : 70pt;                 /* 背景透かし文字サイズ */
-    font-weight   : bold;                 /* 太字                 */
-    color         : #1F668D; /* 背景透かし文字色     */
-                                        /* 中心寄せ＆角度       */
-    left          : 50px;
-    top           : 150px;
-    transform     : translate(-50%, -50%)
-                    rotate(270deg);
-    font-family   :'Shippori Mincho B1', serif;;
+    margin: 0 auto;
 }
 
 h1.name {
@@ -112,7 +107,7 @@ h1.name {
     font-family: "Open Sans", sans-serif;
     font-size: 10pt;
     color:  rgb(255, 255, 255);
-    margin-top: 300px;
+    font-weight: bold;
 }
 
 div.detail {
@@ -123,6 +118,7 @@ div.detail {
     font-family: "Open Sans", sans-serif;
     font-size: 10pt;
     color:  rgb(255, 255, 255);
+    margin-top: 50px;
 }
 
 .col-1 {
