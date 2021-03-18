@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@800&family=Shippori+Mincho+B1:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+/* base.html */
+/* 背景色 */
+body.blog {
+    background-color: #c1e4e9;
+}
+
+body.gallery {
+    background-color: #83ccd2 ;
+}
+
+img.gallery_img {
+    margin-right: 2px;
+    margin-bottom: 4px;
+    object-fit: cover; /* この一行を追加するだけ！ */
+}
+
+/* body.base {
+    
+} */
+
+div.baseBox_2char {
+/* --- 親BOXの定義 --------------------------------------------*/
+    display       : inline-block;         /* インラインブロック化 */
+    position      : relative;             /* 親要素               */
+    overflow      : hidden;               /* はみ出しは非表示     */
+    margin-bottom : 50%;               /* BOXの位置(中央寄せ)  */
+    width         : 70pt;                /* BOXの横幅            */
+    height        : 140pt;                /* BOXの高さ            */
+    float: left;
+}
+   
+/* --- 背景透かし文字の定義 -----------------------------------*/
+div.baseBox_2char div.backStr {
+    position      : absolute;             /* 親要素からの相対位置 */
+    display       : inline-block;         /* インラインブロック化 */
+    white-space   : nowrap;               /* 折り返ししない       */
+    font-size     : 70pt;                 /* 背景透かし文字サイズ */
+    font-weight   : bold;                 /* 太字                 */
+    color         : #1F668D; /* 背景透かし文字色     */
+                                        /* 中心寄せ＆角度       */
+    top           : 50%;
+    left          : 50%;
+    transform     : translate(-50%, -50%)
+                    rotate(270deg);
+    font-family   :'Shippori Mincho B1', serif;
+}
+
+div.article {
+    margin-top: 0;
+    margin-left: 90pt;
+}
+
+nav.navbar {
+    margin-bottom: 10px
+}
+
+/* .hes-gallery {
+} */
+
+/* とりあえず最初っからクラス分類を丁寧にしておいた方がいい！ */
+/* css -> scss で構造化可能，書き方の冗長を減らせる...? */
