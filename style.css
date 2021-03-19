@@ -58,8 +58,9 @@ nav.navbar {
     margin-bottom: 10px
 }
 
-/* .hes-gallery {
-} */
+img.modal_img {
+    margin-left: 30%;
+}
 
 /* とりあえず最初っからクラス分類を丁寧にしておいた方がいい！ */
 /* css -> scss で構造化可能，書き方の冗長を減らせる...? */
